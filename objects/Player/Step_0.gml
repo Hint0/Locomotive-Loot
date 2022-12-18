@@ -10,8 +10,12 @@ function rotate_vector(v, a)
 	return res;
 }
 
+// FIXME: Player is spinning hard when velocity is near 0
 function compute_steering()
 {
+	if(velocity.get_magnitude() == 0)
+		return;
+	
 	if (keyboard_check(vk_left))
 	{
 		steering.add(rotate_vector(velocity, -90));
@@ -29,7 +33,7 @@ function compute_acceleration()
 {
 	if (keyboard_check(vk_up))
 	{	
-		var v = rotate_vector(acceleration_vector, image_angle);
+		var v = rotate_vector(acceleration_vector, -image_angle);
 		v.multiply(acceleration);
 		vec_acc.add(v);
 	}
