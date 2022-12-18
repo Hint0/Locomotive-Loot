@@ -1,0 +1,56 @@
+{
+  "resourceType": "GMProject",
+  "resourceVersion": "1.6",
+  "name": "LaBoucle",
+  "resources": [
+    {"id":{"name":"Path1","path":"paths/Path1/Path1.yy",},"order":4,},
+    {"id":{"name":"Vector","path":"scripts/Vector/Vector.yy",},"order":0,},
+    {"id":{"name":"Player","path":"objects/Player/Player.yy",},"order":0,},
+    {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},"order":1,},
+    {"id":{"name":"spr_rock_big","path":"sprites/spr_rock_big/spr_rock_big.yy",},"order":2,},
+    {"id":{"name":"spr_bullet","path":"sprites/spr_bullet/spr_bullet.yy",},"order":0,},
+    {"id":{"name":"spr_rock_small","path":"sprites/spr_rock_small/spr_rock_small.yy",},"order":3,},
+    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
+  ],
+  "Options": [
+    {"name":"Windows","path":"options/windows/options_windows.yy",},
+    {"name":"operagx","path":"options/operagx/options_operagx.yy",},
+    {"name":"Main","path":"options/main/options_main.yy",},
+  ],
+  "defaultScriptType": 1,
+  "isEcma": false,
+  "configs": {
+    "name": "Default",
+    "children": [],
+  },
+  "RoomOrderNodes": [
+    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+  ],
+  "Folders": [
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Chemins d'accès","folderPath":"folders/Chemins d'accès.yy","order":13,},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Chronologies","folderPath":"folders/Chronologies.yy","order":17,},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Courbes d’animation","folderPath":"folders/Courbes d’animation.yy","order":21,},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Extensions","folderPath":"folders/Extensions.yy","order":23,},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Objets","folderPath":"folders/Objets.yy","order":18,},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Pièces","folderPath":"folders/Pièces.yy","order":19,},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Polices","folderPath":"folders/Polices.yy","order":16,},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Remarques","folderPath":"folders/Remarques.yy","order":22,},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Rooms","folderPath":"folders/Rooms.yy","order":10,},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Scripts","folderPath":"folders/Scripts.yy","order":14,},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Séquences","folderPath":"folders/Séquences.yy","order":20,},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Shaders","folderPath":"folders/Shaders.yy","order":15,},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Sons","folderPath":"folders/Sons.yy","order":12,},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Sprites","folderPath":"folders/Sprites.yy","order":1,},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile sets","folderPath":"folders/Tile sets.yy","order":11,},
+  ],
+  "AudioGroups": [
+    {"resourceType":"GMAudioGroup","resourceVersion":"1.3","name":"audiogroup_default","targets":-1,},
+  ],
+  "TextureGroups": [
+    {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Default","isScaled":true,"compressFormat":"bz2","loadType":"default","directory":"","autocrop":true,"border":2,"mipsToGenerate":0,"groupParent":null,"targets":-1,},
+  ],
+  "IncludedFiles": [],
+  "MetaData": {
+    "IDEVersion": "2022.11.1.56",
+  },
+}
