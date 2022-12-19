@@ -55,11 +55,20 @@ velocity.limit_magnitude(max_speed);
 
 position.add(velocity);
 
-x = position.x;
-y = position.y;
+//x = position.x;
+//y = position.y;
 
 steering.set(0, 0);
 vec_acc.set(0, 0);
 
-if (velocity.get_magnitude() > 0)
+if (velocity.get_magnitude() > 0){
 	image_angle = velocity.get_direction();
+}
+
+/* with(Map) allows to modify every instances of object Map
+and its child. "other" references current instance of player, which
+has a velocity */
+with(Map){
+	player_vec.copy(other.velocity);
+	player_vec.multiply(-1);
+}
