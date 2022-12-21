@@ -65,10 +65,15 @@ if (velocity.get_magnitude() > 0){
 	image_angle = velocity.get_direction();
 }
 
-/* with(Map) allows to modify every instances of object Map
+/* with(MovableTileset) allows to modify every instances of object Map
 and its child. "other" references current instance of player, which
 has a velocity */
-with(Map){
-	player_vec.copy(other.velocity);
-	player_vec.multiply(-1);
+with(MovableTileset){
+	var vec = new vector();
+	vec.copy(other.velocity);
+	vec.multiply(-1);
+	move(vec);
 }
+
+
+
