@@ -68,12 +68,14 @@ if (velocity.get_magnitude() > 0){
 /* with(MovableTileset) allows to modify every instances of object Map
 and its child. "other" references current instance of player, which
 has a velocity */
-with(MovableTileset){
-	var vec = new vector();
-	vec.copy(other.velocity);
-	vec.multiply(-1);
-	move(vec);
+if(velocity.x != 0 or velocity.y != 0){
+	with(MovableTileset){
+		var vec = new vector();
+		vec.copy(other.velocity);
+		vec.multiply(-1);
+		move(vec);
+		delete vec;
+	}
 }
-
 
 
