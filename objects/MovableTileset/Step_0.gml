@@ -9,8 +9,8 @@ function generate_layer_instance(_x, _y){
 }
 
 function move_tile(i, j, velocity){
+	gml_pragma("forceinline");
 	var _tile = tiles[# i, j];
-	
 	var _old_x = _tile.x;
 	var _old_y = _tile.y;
 	
@@ -29,12 +29,14 @@ function move_tile(i, j, velocity){
 	}
 }
 
-function move(velocity){	
+function move(velocity){
 	position.add(velocity);
-	
-	for(var i = 0 ; i < n_horizontal_tiles ; i++){
-		for(var j = 0 ; j < n_vertical_tiles ; j++){
-			move_tile(i, j, velocity);
-		}
-	}
+	tilemap_x(tile_map_id, position.x);
+	tilemap_y(tile_map_id, position.y);
+	//show_debug_message(position.x);
+	//for(var j = 0 ; j < n_vertical_tiles ; j++){
+	//	for(var i = 0 ; i < n_horizontal_tiles ; i++){
+	//		move_tile(i, j, velocity);
+	//	}
+	//}
 }

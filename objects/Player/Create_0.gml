@@ -17,3 +17,5 @@ max_dec = 0.2;
 
 max_speed = 3;
 max_force = 0.5;
+
+show_debug_overlay(true);

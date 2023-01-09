@@ -75,7 +75,7 @@ if(velocity.x != 0 or velocity.y != 0){
 		vec.multiply(-1);
 		move(vec);
 		delete vec;
-	}
+	}	
 }
 
 

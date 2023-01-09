@@ -1,6 +1,6 @@
 event_inherited();
 
-tile_height=64;
-tile_width=64;
+tile_height=8;
+tile_width=8;
 
 tiles_init("Instances", BallModified7);
