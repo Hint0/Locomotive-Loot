@@ -36,6 +36,10 @@ function vector(_x, _y) constructor {
 		y *= _scalar;
 	}
 	
+	static dot = function(vec){
+		return x*vec.x + y*vec.y;
+	}
+	
 	static divide = function(_scalar) {
 		x /= _scalar;
 		y /= _scalar;

@@ -11,6 +11,7 @@
     {"id":{"name":"TileSet2","path":"tilesets/TileSet2/TileSet2.yy",},"order":1,},
     {"id":{"name":"GameController","path":"objects/GameController/GameController.yy",},"order":2,},
     {"id":{"name":"Player","path":"objects/Player/Player.yy",},"order":0,},
+    {"id":{"name":"PerlinNoise","path":"scripts/PerlinNoise/PerlinNoise.yy",},"order":2,},
     {"id":{"name":"Sprite6","path":"sprites/Sprite6/Sprite6.yy",},"order":6,},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},"order":1,},
     {"id":{"name":"BallModified","path":"objects/BallModified/BallModified.yy",},"order":5,},
@@ -19,6 +20,8 @@
     {"id":{"name":"spr_rock_big","path":"sprites/spr_rock_big/spr_rock_big.yy",},"order":2,},
     {"id":{"name":"spr_bullet","path":"sprites/spr_bullet/spr_bullet.yy",},"order":0,},
     {"id":{"name":"Ball","path":"objects/Ball/Ball.yy",},"order":1,},
+    {"id":{"name":"PerlinRoom","path":"rooms/PerlinRoom/PerlinRoom.yy",},"order":1,},
+    {"id":{"name":"o_PerlinNoise","path":"objects/o_PerlinNoise/o_PerlinNoise.yy",},"order":6,},
     {"id":{"name":"spr_rock_small","path":"sprites/spr_rock_small/spr_rock_small.yy",},"order":3,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
@@ -34,6 +37,7 @@
     "children": [],
   },
   "RoomOrderNodes": [
+    {"roomId":{"name":"PerlinRoom","path":"rooms/PerlinRoom/PerlinRoom.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "Folders": [

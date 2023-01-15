@@ -61,29 +61,19 @@ function update_tiles(){
 }
 
 function update_position(){
-		show_debug_message("X vec: "+string(position.x)+", Y vec: "+string(position.y));
 		position.x %= CHUNK_SIZE;
 		position.y %= CHUNK_SIZE;
-		show_debug_message("X vec: "+string(position.x)+", Y vec: "+string(position.y));
-}
-
-function print_tile_under_mouse(){
-	var _x = tilemap_get_cell_x_at_pixel(tile_map_id, mouse_x, mouse_y);
-	var _y = tilemap_get_cell_y_at_pixel(tile_map_id, mouse_x, mouse_y);
-	show_debug_message("(X: "+string(_x)+", Y: "+string(_y)+")");
 }
 
 function move(velocity){
 	position.add(velocity);
 	absolute_position.add(velocity);
 	
-	show_debug_message(position);
 	if(abs(position.x) > CHUNK_SIZE or abs(position.y) > CHUNK_SIZE){
 		update_tiles();
 		update_position();
 	}
 	
-	print_tile_under_mouse();
 	tilemap_x(tile_map_id, position.x);
 	tilemap_y(tile_map_id, position.y);
 	
